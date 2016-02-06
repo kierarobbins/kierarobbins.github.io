@@ -1,0 +1,121 @@
+body {
+    font-family: Arial;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+.bodypage{
+    height: 100%;
+    border-radius: 10px;
+    margin: 60px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    overflow: auto
+}
+.nav ul {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    z-index: 9999;
+}
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+}
+.nav a {
+    display: block;
+    color: white;
+    -webkit-transition: background-color .2s; /*Safari*/
+    transition: .2s background-color;
+    text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */ .nav li a:hover {
+    background-color: #7e7e7e;
+}
+.nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+.image {
+    padding: 0;
+    border: 1px solid #444;
+}
+.header {
+    font-family: Arial;
+    font-style: bold;
+    font-size: 15px;
+}
+.center {
+    margin: auto;
+    padding: 30px;
+}
+.socialmedia ul { position: absolute;
+       top: 15%;
+       right: 15%;
+       margin-left: -25%;
+       transform: translate(-50%, -50%); list-style: none; text-align: right;
+}
+.socialmedia img:hover { border: 5px solid #7e7e7e;
+}
+.socialmedia img{ -webkit-transition: border .2s; /*Safari*/
+    transition: .2s border;
+    width: 50px;
+  height: 50px;
+}
+.button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-transition: background-color .2s; /*Safari*/
+    transition: .2s background-color;
+}
+.button:hover{
+    background-color: #7e7e7e;
+}
+#homebody {
+      text-align: center;
+       display: block;
+       margin: auto;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       margin-right: -50%;
+       transform: translate(-50%, -50%)
+}
+#homebody h1 {
+font-size: 4em; font-family: Arial, Helvetica, sans-serif; color: black; letter-spacing: .3em
+}
+#homebody p{
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7e7e7e;
+}
+@media screen and (min-width: 600px) {
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+    width: 150px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6em;
+  }
+}
